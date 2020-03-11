@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+
+<html data-dpr="1" style="font-size: 37.5px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>酒</title>
+    <script src="./酒_files/sdk"></script><script>
+        var weixin = "none";
+        var weixinNumsForCount = weixin + ":" + "无";
+    </script>
+    <link rel="stylesheet" href="./酒_files/index.css">
+    <script src="./酒_files/jquery.js.下载"></script>
+    <script src="./酒_files/count.js.下载"></script>
+    <script type="text/javascript" src="./酒_files/swiper.js.下载"></script>
+    <script src="./酒_files/jquery.lazyload.min.js.下载"></script>
+    <script src="./酒_files/layer.js.下载"></script><link rel="stylesheet" href="./酒_files/layer.css" id="layuicss-layer">
+    <script src="./酒_files/shengshiqu.js.下载"></script>
+    <!--顶部图滑动-->
+    <style>
+        .swiper-container {
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .swiper-wrapper {
+            display: flex;
+        }
+
+        .swiper-slide {
+            -webkit-flex-shrink: 0;
+        }
+
+        .ub {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex
+        }
+
+        .ub-f1 {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            flex: 1
+        }
+
+        .ub-f2 {
+            -webkit-box-flex: 2;
+            -webkit-flex: 2;
+            flex: 2
+        }
+
+        /*水平*/
+        .ub-h {
+            -webkit-box-orient: horizontal;
+            -webkit-flex-flow: row;
+            flex-flow: row
+        }
+
+        /*垂直*/
+        .ub-v {
+            webkit-box-orient: vertical;
+            -webkit-flex-flow: column;
+            flex-flow: column
+        }
+
+        /*水平居中*/
+        .ub-hc {
+            justify-content: center
+        }
+
+        /*垂直居中*/
+        .ub-vc {
+            align-items: center
+        }
+    </style>
+    <script src="./酒_files/index"></script>
+    <script>
+        $('title').html(shuju.title); //插入标题
+    </script>
+    <link rel="stylesheet" href="./酒_files/layui.css" media="all">
+    <script src="./酒_files/layui.js.下载"></script>
+    <script>
+        layui.use('carousel', function () {
+            var carousel = layui.carousel;
+            //建造实例
+            carousel.render({
+                elem: '#test1'
+                , height: '100%'
+                , width: '100%' //设置容器宽度
+                , arrow: 'always' //始终显示箭头
+                //,anim: 'updown' //切换动画方式
+            });
+        });
+    </script>
+    <!--百度统计-->
+                  			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              			              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		              		<script src="./酒_files/toutiao.js.下载"></script></head>
+<body style="font-size: 12px;max-width: 680px;margin: 0 auto">
+<div id="content">
+    <section class="section">
+        <div class="swiper-container swiper-container-horizontal">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-active" style="width: 680px;">
+                    <div class="layui-carousel" id="test1" lay-anim="" lay-indicator="inside" lay-arrow="always" style="width: 100%; height: 100%;">
+                        <div carousel-item="">
+                            <div class="layui-this"><img src="./酒_files/lunbo1.jpg" style="height:100%;width: 100%;pointer-events: none;" alt="酒"></div>
+                            <div><img src="./酒_files/lunbo2.jpg" style="height:100%;width: 100%;pointer-events: none;" alt="酒"></div>
+                            <div><img src="./酒_files/lunbo3.jpg" style="height:100%;width: 100%;pointer-events: none;" alt="酒"></div>
+                            <div><img src="./酒_files/lunbo4.jpg" style="height:100%;width: 100%;pointer-events: none;" alt="酒"></div>
+                            <div><img src="./酒_files/lunbo5.jpg" style="height:100%;width: 100%;pointer-events: none;" alt="酒"></div>
+                        </div>
+                    <div class="layui-carousel-ind"><ul><li class="layui-this"></li><li></li><li></li><li></li><li></li></ul></div><button class="layui-icon layui-carousel-arrow" lay-type="sub"></button><button class="layui-icon layui-carousel-arrow" lay-type="add"></button></div>
+                </div>
+                <div class="swiper-slide swiper-slide-next" style="width: 680px;">
+                    <img style="width:100%;" src="./酒_files/lunbo2.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span></div>
+        </div>
+    </section>
+    <div data-v-448962d0="" class="buyers-container">
+        <div data-v-448962d0="" class="buyers-item buyers-out">
+            <img data-v-448962d0="" src="./酒_files/2404e00055482a539814f.jpeg" alt="" width="20" height="20" class="buyers-img">
+            <p data-v-448962d0="">
+                德<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">,</span><span style="letter-spacing: -40px">鸿</span></span>州<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">:</span><span style="letter-spacing: -40px">静</span></span>市<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">$</span><span style="letter-spacing: -40px">谁</span></span>黄<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">)</span><span style="letter-spacing: -40px">寞</span></span>**购<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">?</span><span style="letter-spacing: -40px">头</span></span>买<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">%</span><span style="letter-spacing: -40px">孤</span></span>了<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">:</span><span style="letter-spacing: -40px">往</span></span>该<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">[</span><span style="letter-spacing: -40px">漏</span></span>商<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">[</span><span style="letter-spacing: -40px">省</span></span>品<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">?</span><span style="letter-spacing: -40px">独</span></span>，9分<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">\</span><span style="letter-spacing: -40px">独</span></span>钟<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">*</span><span style="letter-spacing: -40px">寒</span></span>前<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">&gt;</span><span style="letter-spacing: -40px">缥</span></span>
+            </p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <div class="loading-title" style="display: none;">
+            </div>
+            <div class="bb-grey" style="">
+                <div class="_goods-info">
+                    <div class="_order-second good-title__name_bottom">
+                        <span class="biaoti">【路易乔治·拿破仑XO】经典白兰地 100%法国进口洋酒</span>
+                    </div>
+                    <div class="order-first _price-sellnum-area" style="line-height:20px;">
+                        <div class="_price-area hot">
+                            <div class="_amount min">
+                                <div class="_amount min">
+                                    ￥
+                                    <span class="_number min_price" style="font-size: 30px;font-weight: bolder"><script>document.write(shuju.min_price); </script>698</span>
+
+                                    <span id="max_price">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="_sellnum-area hot">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMjkuMjQyIDIyLjE0N2MwIDguMDc0LTYuNTQ2IDE0LjYyLTE0LjYxOSAxNC42Mi02LjkyOSAwLTEyLjczNS00LjgyMS0xNC4yNDMtMTEuMjkxQTE0Ljc3OCAxNC43NzggMCAwIDEgMCAyMi4xNDdjMC02LjQwNiAzLTkuMjIyIDYuMjc0LTEyLjIzNEM4Ljk2NyA3LjQzOCAxMS44NDMgNC44MzMgMTMuNDAxIDBhMjAuMTA0IDIwLjEwNCAwIDAgMCAxLjE5Ny42NDhjMy45NzEgMi41NDggNi42MDMgNy4wMDEgNi42MDMgMTIuMDY1IDAgMS4xNTYtLjEzNiAyLjI3Ny0uMzk1IDMuMzVhMTAuNzUyIDEwLjc1MiAwIDAgMCA1LjEyMy00LjkzOGMxLjkzOCAzLjA2MyAzLjMxMyA2Ljc0NSAzLjMxMyAxMS4wMjIiIGZpbGw9IiNGRjQ4MkIiLz48cGF0aCBkPSJNNyAyNy4wNDdDNyAzMS40NCAxMC41ODIgMzUgMTQuOTk5IDM1YzMuNzkxIDAgNi45NjgtMi42MjIgNy43OTMtNi4xNDJhNy45OTQgNy45OTQgMCAwIDAgLjIwOC0xLjgxYzAtMy40ODUtMS42NDEtNS4wMTctMy40MzMtNi42NTYtMS40NzMtMS4zNDYtMy4wNDctMi43NjMtMy45LTUuMzkyIDAgMC0uMjMzLjExMi0uNjIyLjMzM2E3Ljc3NyA3Ljc3NyAwIDAgMC0zLjQzIDguNDA1IDUuODY4IDUuODY4IDAgMCAxLTIuODAyLTIuNjg2QzcuNzUzIDIyLjcxOCA3IDI0LjcyIDcgMjcuMDQ3IiBmaWxsPSIjRkZFNjY2Ii8+PC9nPjwvc3ZnPg==" alt="hot" class="hot-icon">
+                            热<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">&gt;</span><span style="letter-spacing: -40px">幽</span></span>销<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">.</span><span style="letter-spacing: -40px">栖</span></span>3.4万<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">{</span><span style="letter-spacing: -40px">挂</span></span>件<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">&lt;</span><span style="letter-spacing: -40px">挂</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 85%;background: #ffe0de;height: 40px;margin: 15px auto;font-size: 14px;border-radius:8px;" class="ub">
+                    <div class="ub-f1" style="text-align: center;line-height: 40px;">
+                        包<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">)</span><span style="letter-spacing: -40px">拣</span></span>邮<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">[</span><span style="letter-spacing: -40px">鸿</span></span>
+                    </div>
+                    <div class="ub-f2" style="border-radius: 8px;text-align: center; line-height: 40px;background-image: linear-gradient(to right,#ff6b67 , #ff4181);color: #fff" onclick="javascript:document.getElementById(&#39;order-form&#39;).scrollIntoView()">
+                        <img id="shand" src="./酒_files/gwc.png" style="width: 25px; vertical-align: middle; margin: -5px 5px 0px 0px; display: inline-block; opacity: 0.669369;">
+                        验<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">.</span><span style="letter-spacing: -40px">无</span></span>货<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">,</span><span style="letter-spacing: -40px">不<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">{</span><span style="letter-spacing: -40px">人</span></span></span></span>满<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">\</span><span style="letter-spacing: -40px">却</span></span>意<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">?</span><span style="letter-spacing: -40px">缈</span></span>后<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">.</span><span style="letter-spacing: -40px">枝</span></span>在<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">(</span><span style="letter-spacing: -40px">初</span></span>付<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">%</span><span style="letter-spacing: -40px">却</span></span>款<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">^</span><span style="letter-spacing: -40px">人<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">!</span><span style="letter-spacing: -40px">寞</span></span></span></span>
+                    </div>
+                </div>
+                <div class="_recommend-remark hot">
+                    推<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">[</span><span style="letter-spacing: -40px">静</span></span>荐<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">\</span><span style="letter-spacing: -40px">来<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">$</span><span style="letter-spacing: -40px">缺</span></span></span></span>理<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">]</span><span style="letter-spacing: -40px">无</span></span>由<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">^</span><span style="letter-spacing: -40px">寞</span></span>：
+                    <span class="reason">好品质  奢华享受</span>
+                </div>
+                <a class="_sell-point hair-line top">
+                    <div class="service">
+                        服<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">/</span><span style="letter-spacing: -40px">寂</span></span>务<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">?</span><span style="letter-spacing: -40px">影</span></span>
+                    </div>
+                    <div class="wrap">
+                        <div class="_item" style="margin-right: 10px">
+                            <i>
+                            </i>
+                            包<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">)</span><span style="letter-spacing: -40px">拣</span></span>邮<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">[</span><span style="letter-spacing: -40px">鸿</span></span>
+                        </div>
+                        <div class="_item" style="margin-right: 10px">
+                            <i>
+                            </i>
+                            假<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">$</span><span style="letter-spacing: -40px">冷<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">\</span><span style="letter-spacing: -40px">初</span></span></span></span>一<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">/</span><span style="letter-spacing: -40px">往</span></span>赔<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">[</span><span style="letter-spacing: -40px">起</span></span>三<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">)</span><span style="letter-spacing: -40px">月</span></span>
+                        </div>
+                        <div class="_item" style="margin-right: 10px">
+                            <i>
+                            </i>
+                            货<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">,</span><span style="letter-spacing: -40px">不<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">{</span><span style="letter-spacing: -40px">人</span></span></span></span>到<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">*</span><span style="letter-spacing: -40px">寞</span></span>付<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">%</span><span style="letter-spacing: -40px">却</span></span>款<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">^</span><span style="letter-spacing: -40px">人<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">!</span><span style="letter-spacing: -40px">寞</span></span></span></span>
+                        </div>
+                        <div class="_item" style="margin-right: 10px">
+                            <i>
+                            </i>
+                            7天<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">:</span><span style="letter-spacing: -40px">静</span></span>退<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">\</span><span style="letter-spacing: -40px">月</span></span>货<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">,</span><span style="letter-spacing: -40px">不<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">{</span><span style="letter-spacing: -40px">人</span></span></span></span>
+                        </div>
+                        <div class="_item" style="margin-right: 10px">
+                            <i>
+                            </i>
+                            消<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">|</span><span style="letter-spacing: -40px">谁</span></span>费<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">!</span><span style="letter-spacing: -40px"> 惊</span></span>者<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">&gt;</span><span style="letter-spacing: -40px">寒</span></span>保<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">%</span><span style="letter-spacing: -40px">漏</span></span>障<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">(</span><span style="letter-spacing: -40px">沙</span></span>服<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">/</span><span style="letter-spacing: -40px">寂</span></span>务<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">?</span><span style="letter-spacing: -40px">影</span></span>
+                        </div>
+                        <div class="_item">
+                        </div>
+                    </div>
+                    <i class="arrow-right">
+                    </i>
+                </a>
+                <div class="_product_params bt-grey">
+                    <a class="product-format">
+                        <div>
+                            <span class="_word"> 商<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">[</span><span style="letter-spacing: -40px">省</span></span>品<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">?</span><span style="letter-spacing: -40px">独</span></span>参<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">!</span><span style="letter-spacing: -40px">尽</span></span>数<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">\</span><span style="letter-spacing: -40px">影</span></span> </span>
+                            <div class="_right">
+                                <i class="right-arrow"> </i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--<div data-v-0aea5d3d="" class="bb-grey">-->
+        <!--    <div data-v-0aea5d3d="" class="_comment">-->
+        <!--        <div data-v-0aea5d3d="" class="comment-count">-->
+        <!--            <span data-v-0aea5d3d="" class="comment-text">商<span-->
+        <!--                    style='color:rgba(255,255,255,0)'><span-->
+        <!--                        style='letter-spacing: -40px'>[</span><span-->
+        <!--                        style='letter-spacing: -40px'>省</span></span>品<span-->
+        <!--                    style='color:rgba(255,255,255,0)'><span-->
+        <!--                        style='letter-spacing: -40px'>?</span><span-->
+        <!--                        style='letter-spacing: -40px'>独</span></span>评<span-->
+        <!--                    style='color:rgba(255,255,255,0)'><span-->
+        <!--                        style='letter-spacing: -40px'>(</span><span-->
+        <!--                        style='letter-spacing: -40px'>不<span-->
+        <!--                            style='color:rgba(255,255,255,0)'><span-->
+        <!--                                style='letter-spacing: -40px'>{</span><span-->
+        <!--                                style='letter-spacing: -40px'>人</span></span></span></span>论<span-->
+        <!--                    style='color:rgba(255,255,255,0)'><span-->
+        <!--                        style='letter-spacing: -40px'>*</span><span-->
+        <!--                        style='letter-spacing: -40px'>初</span></span>（691）</span>-->
+        <!--            <div data-v-0aea5d3d="" class="comment-rate-box">-->
+        <!--                <span data-v-0aea5d3d="" class="comment-good good">好<span-->
+        <!--                        style='color:rgba(255,255,255,0)'><span-->
+        <!--                            style='letter-spacing: -40px'>{</span><span-->
+        <!--                            style='letter-spacing: -40px'>寂</span></span>评<span-->
+        <!--                        style='color:rgba(255,255,255,0)'><span-->
+        <!--                            style='letter-spacing: -40px'>(</span><span-->
+        <!--                            style='letter-spacing: -40px'>不<span-->
+        <!--                                style='color:rgba(255,255,255,0)'><span-->
+        <!--                                    style='letter-spacing: -40px'>{</span><span-->
+        <!--                                    style='letter-spacing: -40px'>人</span></span></span></span>率<span-->
+        <!--                        style='color:rgba(255,255,255,0)'><span-->
+        <!--                            style='letter-spacing: -40px'>^</span><span-->
+        <!--                            style='letter-spacing: -40px'>起</span></span>100%</span>-->
+        <!--                <span data-v-0aea5d3d="" class="arrow-right good"></span>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div style="margin-top: 10px;padding: 0 20px;">-->
+        <!--            <div style="float: left">-->
+        <!--                <div style="display: inline-block;vertical-align: middle;">-->
+        <!--                    <img src="./asset/img/pl1.jpg"-->
+        <!--                         style="width:40px;vertical-align: middle;float: left;border-radius:100%">-->
+        <!--                    <p style="float: left;margin-left: 5px;"><span style="font-size: 16px;">用<span-->
+        <!--                                style='color:rgba(255,255,255,0)'><span-->
+        <!--                                    style='letter-spacing: -40px'>,</span><span-->
+        <!--                                    style='letter-spacing: -40px'>寂</span></span>**2</span><br><span-->
+        <!--                            style="color: #8f8f8f">2020-2-9 下<span-->
+        <!--                                style='color:rgba(255,255,255,0)'><span-->
+        <!--                                    style='letter-spacing: -40px'>:</span><span-->
+        <!--                                    style='letter-spacing: -40px'>恨</span></span>午<span-->
+        <!--                                style='color:rgba(255,255,255,0)'><span-->
+        <!--                                    style='letter-spacing: -40px'>.</span><span-->
+        <!--                                    style='letter-spacing: -40px'> 惊</span></span>7:35</span>-->
+        <!--                    </p>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            <p style="clear: both"></p>-->
+        <!--            <p style="margin: 10px 0;font-size: 16px;">真不错，也不闷手，质感很好。非常时期，戴着去超市买菜，按电梯，都能有效隔离病菌！用起来非常方便！-->
+        <!--            </p>-->
+        <!--            <p>-->
+        <!--                <img src="asset/img/p1.jpg" style="width: 32%;height:139px">-->
+        <!--                <img src="asset/img/p2.jpg" style="width: 32%;height:139px">-->
+        <!--                <img src="asset/img/p3.jpg" style="width: 32%;height:139px">-->
+        <!--            </p>-->
+        <!--        </div>-->
+        <!--        <hr style="border: 3px solid #f4f5f6; margin-top: 20px;">-->
+        <!--        <div style="margin-top: 10px;padding: 0 20px;">-->
+        <!--            <div style="float: left">-->
+        <!--                <div style="display: inline-block;vertical-align: middle;">-->
+        <!--                    <img src="./asset/img/pl2.jpg"-->
+        <!--                         style="width:30px;vertical-align: middle;float: left;border-radius:100%">-->
+        <!--                    <p style="float: left;margin-left: 5px;"><span style="font-size: 16px;">用<span-->
+        <!--                                style='color:rgba(255,255,255,0)'><span-->
+        <!--                                    style='letter-spacing: -40px'>,</span><span-->
+        <!--                                    style='letter-spacing: -40px'>寂</span></span>**9</span><br><span-->
+        <!--                            style="color: #8f8f8f">2020-2-1 下<span-->
+        <!--                                style='color:rgba(255,255,255,0)'><span-->
+        <!--                                    style='letter-spacing: -40px'>:</span><span-->
+        <!--                                    style='letter-spacing: -40px'>恨</span></span>午<span-->
+        <!--                                style='color:rgba(255,255,255,0)'><span-->
+        <!--                                    style='letter-spacing: -40px'>.</span><span-->
+        <!--                                    style='letter-spacing: -40px'> 惊</span></span>3:23</span>-->
+        <!--                    </p>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            <p style="clear: both"></p>-->
+        <!--            <p style="margin: 10px 0;font-size: 16px;">-->
+        <!--                又便宜发货又快，手套质量也很好，以后就买你家了，每天上班都要用，非常时期，一定要有安全防护！感谢商家-->
+        <!--            </p>-->
+        <!--            <p>-->
+        <!--                <img src="asset/img/p4.jpg" style="width: 32%">-->
+        <!--                <img src="asset/img/p5.jpg" style="width: 32%">-->
+        <!--                <img src="asset/img/p6.jpg" style="width: 32%">-->
+        <!--            </p>-->
+        <!--        </div>-->
+        <!--        <hr style="border: 3px solid #f4f5f6; margin-top: 20px;">-->
+        <!--        <div style="margin-top: 10px;padding: 0 20px;">-->
+        <!--            <div style="float: left">-->
+        <!--                <div style="display: inline-block;vertical-align: middle;">-->
+        <!--                    <img src="./asset/img/pl3.jpg"-->
+        <!--                         style="width:30px;vertical-align: middle;float: left;border-radius:100%">-->
+        <!--                    <p style="float: left;margin-left: 5px;"><span style="font-size: 16px;">用<span-->
+        <!--                                style='color:rgba(255,255,255,0)'><span-->
+        <!--                                    style='letter-spacing: -40px'>,</span><span-->
+        <!--                                    style='letter-spacing: -40px'>寂</span></span>**4</span><br><span-->
+        <!--                            style="color: #8f8f8f">2020-1-30 上<span-->
+        <!--                                style='color:rgba(255,255,255,0)'><span-->
+        <!--                                    style='letter-spacing: -40px'>,</span><span-->
+        <!--                                    style='letter-spacing: -40px'>谁</span></span>午<span-->
+        <!--                                style='color:rgba(255,255,255,0)'><span-->
+        <!--                                    style='letter-spacing: -40px'>.</span><span-->
+        <!--                                    style='letter-spacing: -40px'> 惊</span></span>11:43</span>-->
+        <!--                    </p>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            <p style="clear: both"></p>-->
+        <!--            <p style="margin: 10px 0;font-size: 16px;">-->
+        <!--                现在才来好评,  真心话,  用着很方便,  很贴手，质量没问题，戴着打扫卫生，做饭都很方便，还能隔离细菌，太好用了！以后需要还来回购！-->
+        <!--            </p>-->
+        <!--            <p>-->
+        <!--                <img src="asset/img/p7.jpg" style="width: 32%">-->
+        <!--                <img src="asset/img/p8.jpg" style="width: 32%">-->
+        <!--                <img src="asset/img/p9.jpg" style="width: 33%;height:205px">-->
+        <!--            </p>-->
+        <!--        </div>-->
+        <!--        <hr style="border:1px solid #f4f5f6; margin-top: 20px;">-->
+
+        <!--    </div>-->
+        <!--</div>-->
+        <div>
+            <div class="_switch-tab-container">
+                <div id="switch-tab-bar" class="_switch-tab hair-line bottom">
+                    <div class="_type">
+                        <div class="_i">商<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">[</span><span style="letter-spacing: -40px">省</span></span>品<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">?</span><span style="letter-spacing: -40px">独</span></span>详<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">*</span><span style="letter-spacing: -40px">谁</span></span>情<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">[</span><span style="letter-spacing: -40px">幽</span></span></div>
+                    </div>
+                    <div class="_type">
+                        <div class="_i">咨<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">]</span><span style="letter-spacing: -40px">人</span></span>询<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">:</span><span style="letter-spacing: -40px">有</span></span>与<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">.</span><span style="letter-spacing: -40px">缥</span></span>售<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">*</span><span style="letter-spacing: -40px">寒</span></span>后<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">.</span><span style="letter-spacing: -40px">枝</span></span></div>
+                    </div>
+                </div>
+                <div class="_tab-container description" style="width: 100%">
+                    <div class="_desc" style="width: 100%">
+                        <div class="_desc-pics">
+                            <div class="_desc-tit" style="width: 100%">
+                                <span>图<span style="color:rgba(255,255,255,0);display:none"><span style="letter-spacing: -40px">.</span><span style="letter-spacing: -40px">桐</span></span>文<span style="color:rgba(255,255,255,0);display:none"><span style="letter-spacing: -40px">|</span><span style="letter-spacing: -40px">独</span></span>详<span style="color:rgba(255,255,255,0);display:none"><span style="letter-spacing: -40px">*</span><span style="letter-spacing: -40px">谁</span></span>情<span style="color:rgba(255,255,255,0);display:none"><span style="letter-spacing: -40px">[</span><span style="letter-spacing: -40px">幽</span></span></span>
+                            </div>
+                            <div>
+                                <img data-original="asset/img/x1.jpg" style="width: 100%;max-width: 100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC">
+                                <img data-original="asset/img/x2.jpg" style="width: 100%;max-width: 100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC">
+                                <img data-original="asset/img/x3.jpg" style="width: 100%;max-width: 100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC">
+                                <img data-original="asset/img/x4.jpg" style="width: 100%;max-width: 100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC">
+                                <img data-original="asset/img/x5.jpg" style="width: 100%;max-width: 100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC">
+                                <img data-original="asset/img/x6.jpg" style="width: 100%;max-width: 100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC">
+                                <img data-original="asset/img/x7.jpg" style="width: 100%;max-width: 100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC">
+                                <!--<img data-original="asset/img/x8.jpg"-->
+                                <!--     style="width: 100%;max-width: 100%">-->
+                                <!--<img data-original="asset/img/x9.jpg"-->
+                                <!--     style="width: 100%;max-width: 100%">-->
+                                <!--<img data-original="asset/img/x10.gif"-->
+                                <!--     style="width: 100%;max-width: 100%">-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="order-form" class="_form" style="width: 100%;">
+            <div class="_title bt-grey" id="dingdanxin">订<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">]</span><span style="letter-spacing: -40px">恨</span></span>单<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">&lt;</span><span style="letter-spacing: -40px">幽</span></span>信<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">&lt;</span><span style="letter-spacing: -40px">回</span></span>息<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">!</span><span style="letter-spacing: -40px">静</span></span></div>
+            <div class="bb-grey _sku">
+                <div id="product-snap" class="_snap" style="width: 100%;">
+                    <div class="_snap-container">
+                        <img src="./酒_files/lunbo1.jpg" alt="">
+                        <div class="_right">
+                            <div class="name">
+                                <div class="biaoti" style="white-space: nowrap;">【路易乔治·拿破仑XO】经典白兰地 100%法国进口洋酒</div>
+                            </div>
+                            <div class="delievery-announce">
+                                当<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">!</span><span style="letter-spacing: -40px">鸿</span></span>天<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">:</span><span style="letter-spacing: -40px">静</span></span>17:00前<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">&gt;</span><span style="letter-spacing: -40px">缥</span></span>发<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">)</span><span style="letter-spacing: -40px">孤</span></span>货<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">,</span><span style="letter-spacing: -40px">不<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">{</span><span style="letter-spacing: -40px">人</span></span></span></span>
+                            </div>
+                            <div class="money">
+                                <span style="color: #f85959;">￥</span>
+                                <span class="price">
+									<span class="danjia">1988</span>
+								</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_f-item hair-line bottom">
+                    <p style="color: #505050;font-size: 16px;margin: 5px 0">规<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">,</span><span style="letter-spacing: -40px">洲</span></span>格<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">{</span><span style="letter-spacing: -40px">寒</span></span></p>
+                    <div class="_spec-items guige" style="padding-left:5px;"><span class="_spec-item active" pjie="一箱（红酒)" jiage="1988">一箱（红酒)</span></div>
+                </div>
+                <div class="_f-item _inline" id="mun_type" style="display: none;">
+                    <div class="_spec-title" style="font-size: 18px;">购<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">?</span><span style="letter-spacing: -40px">头</span></span>买<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">%</span><span style="letter-spacing: -40px">孤</span></span>数<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">\</span><span style="letter-spacing: -40px">影</span></span>量<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">%</span><span style="letter-spacing: -40px">挂</span></span></div>
+                    <div class="_spec-items _amount" style="width: 100%">
+                        <div class="_devide disabled" onclick="jiajian(2)" style="font-size: 18px;">
+                            -
+                        </div>
+                        <input id="sl" value="1" style="font-size: 18px;">
+                        <div class="_add disabled" onclick="jiajian(1)" style="font-size: 18px;">+
+                        </div>
+                    </div>
+                </div>
+
+                <hr style="border: 3px solid #f4f5f6;margin: 0">
+
+                <form style="padding-left:10px;font-size: 18px;" action="https://dyh.fsxy.com/home/ord/index" method="post" id="xianshiyincang">
+                    <input name="adId" type="hidden" value="无">
+                    <input name="goods_name" type="hidden" value="酒">
+                    <input name="user_id" type="hidden" value="80">
+                    <input name="shuliang" type="hidden" value="1">
+                    <input name="danjia" type="hidden" value="1988">
+                    <input name="zongjia" type="hidden" value="1988">
+                    <input name="guige" type="hidden" value="一箱（红酒)">
+                    <input type="hidden" id="sheng" value="浙江省">
+                    <input type="hidden" id="shi" value="杭州市">
+                    <br>
+                    <div class="ub" style="border-bottom: 1px solid #f4f5f6;padding-bottom: 5px;">
+                        <span style="margin-right:25px;color: #555;line-height: 30px;">
+                            收<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">{</span><span style="letter-spacing: -40px">枝</span></span>货<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">,</span><span style="letter-spacing: -40px">不<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">{</span><span style="letter-spacing: -40px">人</span></span></span></span>人<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">!</span><span style="letter-spacing: -40px">寞</span></span>:
+                        </span>
+                        <input maxlength="5" type="text" class="ub-f1" name="name" id="username" required="true" style="font-size: 16px;width:60%;height:30px;border:none;padding-left: 10px;line-height: 30px;">
+                    </div>
+                    <br>
+                    <div class="ub" style="border-bottom: 1px solid #f4f5f6;padding-bottom: 5px;">
+                        <span style="margin-right:10px;color: #555;line-height: 30px;">
+                            联<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">|</span><span style="letter-spacing: -40px">不</span></span>系<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">)</span><span style="letter-spacing: -40px">静</span></span>方<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">}</span><span style="letter-spacing: -40px">漏</span></span>式<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">&gt;</span><span style="letter-spacing: -40px">独</span></span>:
+                        </span>
+                        <input type="text" oninput="value=value.replace(/[^\d]/g,&#39;&#39;)" name="tel" id="lianxi" class="ub-f1" required="true" style="font-size: 16px;width:60%;height:30px;border:none;padding-left: 10px;line-height: 30px;">
+                    </div>
+                    <br>
+                    <div class="ub" style="border-bottom: 1px solid #f4f5f6;padding-bottom: 10px;">
+                        <div style="margin-right:10px;color: #555;line-height: 30px;">
+                            选<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">^</span><span style="letter-spacing: -40px">肯</span></span>择<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">)</span><span style="letter-spacing: -40px">谁</span></span>地<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">!</span><span style="letter-spacing: -40px">寞</span></span>区<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">:</span><span style="letter-spacing: -40px">不</span></span>:
+                        </div>
+                        <div class="ub-f1 ub" style="margin-left: 8px;">
+                            <div class="ub-f1">
+                                <select name="input_province" id="input_province" class="form-control" style="font-size: 16px;background: none;color: #757575;width:80%;border-color: #eee;height:30px" required="true">
+                                    <option value=""></option>
+                                <option value="北京市" exid="110000">北京市</option><option value="天津市" exid="120000">天津市</option><option value="河北省" exid="130000">河北省</option><option value="山西省" exid="140000">山西省</option><option value="内蒙古自治区" exid="150000">内蒙古自治区</option><option value="辽宁省" exid="210000">辽宁省</option><option value="吉林省" exid="220000">吉林省</option><option value="黑龙江省" exid="230000">黑龙江省</option><option value="上海市" exid="310000">上海市</option><option value="江苏省" exid="320000">江苏省</option><option value="浙江省" exid="330000">浙江省</option><option value="安徽省" exid="340000">安徽省</option><option value="福建省" exid="350000">福建省</option><option value="江西省" exid="360000">江西省</option><option value="山东省" exid="370000">山东省</option><option value="河南省" exid="410000">河南省</option><option value="湖北省" exid="420000">湖北省</option><option value="湖南省" exid="430000">湖南省</option><option value="广东省" exid="440000">广东省</option><option value="广西壮族自治区" exid="450000">广西壮族自治区</option><option value="海南省" exid="460000">海南省</option><option value="重庆市" exid="500000">重庆市</option><option value="四川省" exid="510000">四川省</option><option value="贵州省" exid="520000">贵州省</option><option value="云南省" exid="530000">云南省</option><option value="西藏自治区" exid="540000">西藏自治区</option><option value="陕西省" exid="610000">陕西省</option><option value="甘肃省" exid="620000">甘肃省</option><option value="青海省" exid="630000">青海省</option><option value="宁夏回族自治区" exid="640000">宁夏回族自治区</option><option value="新疆维吾尔自治区" exid="650000">新疆维吾尔自治区</option><option value="台湾省" exid="710000">台湾省</option><option value="香港特别行政区" exid="810000">香港特别行政区</option><option value="澳门特别行政区" exid="820000">澳门特别行政区</option></select>
+                            </div>
+                            <div class="ub-f1">
+                                <select name="input_city" id="input_city" class="form-control" style="font-size: 16px;color: #757575;width:80%;border-color: #eee;height:30px;background: none" required="true">
+                                    
+                                <option value="">城市</option><option value="杭州市" exid="330100">杭州市</option><option value="宁波市" exid="330200">宁波市</option><option value="温州市" exid="330300">温州市</option><option value="嘉兴市" exid="330400">嘉兴市</option><option value="湖州市" exid="330500">湖州市</option><option value="绍兴市" exid="330600">绍兴市</option><option value="金华市" exid="330700">金华市</option><option value="衢州市" exid="330800">衢州市</option><option value="舟山市" exid="330900">舟山市</option><option value="台州市" exid="331000">台州市</option><option value="丽水市" exid="331100">丽水市</option></select>
+                            </div>
+                            <div class="ub-f1">
+                                <select name="input_area" id="input_area" class="form-control" style="font-size: 16px;background: none;color: #757575;width:80%;border-color: #eee;height:30px" required="true">
+                                    
+                                <option value="">区域</option><option value="市辖区" exid="330101">市辖区</option><option value="上城区" exid="330102">上城区</option><option value="下城区" exid="330103">下城区</option><option value="江干区" exid="330104">江干区</option><option value="拱墅区" exid="330105">拱墅区</option><option value="西湖区" exid="330106">西湖区</option><option value="滨江区" exid="330108">滨江区</option><option value="萧山区" exid="330109">萧山区</option><option value="余杭区" exid="330110">余杭区</option><option value="桐庐县" exid="330122">桐庐县</option><option value="淳安县" exid="330127">淳安县</option><option value="建德市" exid="330182">建德市</option><option value="富阳市" exid="330183">富阳市</option><option value="临安市" exid="330185">临安市</option></select>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="ub" style="border-bottom: 1px solid #f4f5f6;padding-bottom: 5px;">
+                        <span style="margin-right:10px;color: #555;line-height: 30px;">
+                            详<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">*</span><span style="letter-spacing: -40px">谁</span></span>细<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">/</span><span style="letter-spacing: -40px">往</span></span>地<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">!</span><span style="letter-spacing: -40px">寞</span></span>址<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">|</span><span style="letter-spacing: -40px">疏</span></span>:
+                        </span>
+                        <input type="text" name="xiangxidz" id="xxdz" class="ub-f1" required="true" style="font-size: 16px;width:60%;height:30px;border: none;padding-left: 10px;line-height: 30px;">
+                    </div>
+                    <br>
+                    <div class="ub" style="border-bottom: 1px solid #f4f5f6;padding-bottom: 5px;">
+                        <span style="margin-right:10px;color: #555;line-height: 30px;">
+                            买<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">%</span><span style="letter-spacing: -40px">孤</span></span>家<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">/</span><span style="letter-spacing: -40px">静</span></span>留<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">/</span><span style="letter-spacing: -40px">无</span></span>言<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">!</span><span style="letter-spacing: -40px">无</span></span>:
+                        </span>
+                        <input type="text" class="ub-f1" name="mjly" style="font-size: 16px;width:60%;height:30px;border: none;padding-left: 10px;line-height: 30px;">
+                    </div>
+                </form>
+
+                <div class="_f-item _inline bb-grey _f-item-fix" style="font-size: 18px;">
+                    <div class="_spec-title" style="">
+                        支<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">)</span><span style="letter-spacing: -40px">缥</span></span>付<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">%</span><span style="letter-spacing: -40px">却</span></span>方<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">}</span><span style="letter-spacing: -40px">漏</span></span>式<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">&gt;</span><span style="letter-spacing: -40px">独</span></span>
+                    </div>
+                    <div class="_spec-items _grey" style="font-size: 16px;">
+                        货<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">,</span><span style="letter-spacing: -40px">不<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">{</span><span style="letter-spacing: -40px">人</span></span></span></span>到<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">*</span><span style="letter-spacing: -40px">寞</span></span>付<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">%</span><span style="letter-spacing: -40px">却</span></span>款<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">^</span><span style="letter-spacing: -40px">人<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">!</span><span style="letter-spacing: -40px">寞</span></span></span></span>(验<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">.</span><span style="letter-spacing: -40px">无</span></span>货<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">,</span><span style="letter-spacing: -40px">不<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">{</span><span style="letter-spacing: -40px">人</span></span></span></span>满<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">\</span><span style="letter-spacing: -40px">却</span></span>意<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">?</span><span style="letter-spacing: -40px">缈</span></span>后<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">.</span><span style="letter-spacing: -40px">枝</span></span>付<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">%</span><span style="letter-spacing: -40px">却</span></span>款<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">^</span><span style="letter-spacing: -40px">人<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">!</span><span style="letter-spacing: -40px">寞</span></span></span></span>)
+                    </div>
+                </div>
+                <div class="bb-grey _coupon">
+                    <div class="_f-item _inline bb-grey _f-item-fix">
+                        <div class="_spec-title" style="font-size: 18px;">
+                            实<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">&lt;</span><span style="letter-spacing: -40px">恨</span></span>付<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">%</span><span style="letter-spacing: -40px">却</span></span>金<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">%</span><span style="letter-spacing: -40px">人</span></span>额<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">)</span><span style="letter-spacing: -40px">肯</span></span>
+                        </div>
+                        <div class="_spec-items _grey" style="color: #999;font-size: 18px;">
+                            <span class="shifu">1988</span>
+                        </div>
+                    </div>
+                    <div class="_f-item _inline bb-grey _f-item-fix" style="font-size: 18px;">
+                        <div class="_spec-title" style="">
+                            运<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">!</span><span style="letter-spacing: -40px">缈</span></span>费<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">!</span><span style="letter-spacing: -40px"> 惊</span></span>
+                        </div>
+                        <div class="_spec-items _grey" style="color: #999">
+                            包<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">)</span><span style="letter-spacing: -40px">拣</span></span>邮<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">[</span><span style="letter-spacing: -40px">鸿</span></span>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-fix" onclick="tjbiaodan()" style="width: 95%;font-size: 18px;">
+                    提<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">!</span><span style="letter-spacing: -40px"> 惊</span></span>交<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">%</span><span style="letter-spacing: -40px">来</span></span>订<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">]</span><span style="letter-spacing: -40px">恨</span></span>单<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">&lt;</span><span style="letter-spacing: -40px">幽</span></span>
+                </button>
+
+                <!--<div class="_service-statement" style="margin-bottom:30px;">-->
+                <!--    <p align="center" style="margin-top:10px;">鲁<span-->
+                <!--            style='color:rgba(255,255,255,0)'><span-->
+                <!--                style='letter-spacing: -40px'>!</span><span-->
+                <!--                style='letter-spacing: -40px'>静</span></span>班<span-->
+                <!--            style='color:rgba(255,255,255,0)'><span-->
+                <!--                style='letter-spacing: -40px'>,</span><span-->
+                <!--                style='letter-spacing: -40px'>沙</span></span>仅<span-->
+                <!--            style='color:rgba(255,255,255,0)'><span-->
+                <!--                style='letter-spacing: -40px'>:</span><span-->
+                <!--                style='letter-spacing: -40px'>幽</span></span>为<span-->
+                <!--            style='color:rgba(255,255,255,0)'><span-->
+                <!--                style='letter-spacing: -40px'>$</span><span-->
+                <!--                style='letter-spacing: -40px'>冷</span></span>商<span-->
+                <!--            style='color:rgba(255,255,255,0)'><span-->
+                <!--                style='letter-spacing: -40px'>[</span><span-->
+                <!--                style='letter-spacing: -40px'>省</span></span>家<span-->
+                <!--            style='color:rgba(255,255,255,0)'><span-->
+                <!--                style='letter-spacing: -40px'>/</span><span-->
+                <!--                style='letter-spacing: -40px'>静</span></span>提<span-->
+                <!--            style='color:rgba(255,255,255,0)'><span-->
+                <!--                style='letter-spacing: -40px'>!</span><span-->
+                <!--                style='letter-spacing: -40px'> 惊</span></span>供<span-->
+                <!--            style='color:rgba(255,255,255,0)'><span-->
+                <!--                style='letter-spacing: -40px'>?</span><span-->
+                <!--                style='letter-spacing: -40px'>寒</span></span>技<span-->
+                <!--            style='color:rgba(255,255,255,0)'><span-->
+                <!--                style='letter-spacing: -40px'>\</span><span-->
+                <!--                style='letter-spacing: -40px'>洲</span></span>术<span-->
+                <!--            style='color:rgba(255,255,255,0)'><span-->
+                <!--                style='letter-spacing: -40px'>:</span><span-->
+                <!--                style='letter-spacing: -40px'>冷</span></span>服<span-->
+                <!--            style='color:rgba(255,255,255,0)'><span-->
+                <!--                style='letter-spacing: -40px'>/</span><span-->
+                <!--                style='letter-spacing: -40px'>寂</span></span>务<span-->
+                <!--            style='color:rgba(255,255,255,0)'><span-->
+                <!--                style='letter-spacing: -40px'>?</span><span-->
+                <!--                style='letter-spacing: -40px'>影</span></span></p>-->
+                <!--    <p align="center" style="margin-top:10px;">商<span-->
+                <!--            style='color:rgba(255,255,255,0)'><span-->
+                <!--                style='letter-spacing: -40px'>[</span><span-->
+                <!--                style='letter-spacing: -40px'>省</span></span>家<span-->
+                <!--            style='color:rgba(255,255,255,0)'><span-->
+                <!--                style='letter-spacing: -40px'>/</span><span-->
+                <!--                style='letter-spacing: -40px'>静</span></span>：<span-->
+                <!--            id="banquan"></span></p>-->
+                <!--</div>-->
+            </div>
+            <div id="ljgm">
+                <div id="bottom-bar" class="_bottom-bar ub" style="width: 100%;max-width:680px;">
+                    <div class="_btn-container _btn-container--small single ub-f1" onclick="tel()">
+                        <a class="customer-service-btn">
+                            <i class="customer-service-icon">
+                            </i>
+                            电<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">\</span><span style="letter-spacing: -40px">不</span></span>话<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">{</span><span style="letter-spacing: -40px">枝</span></span>咨<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">]</span><span style="letter-spacing: -40px">人</span></span>询<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">:</span><span style="letter-spacing: -40px">有</span></span>
+                        </a>
+                    </div>
+                    <div class="_buy-submit-btn _buy-submit-btn--large ub-f1" onclick="javascript:document.getElementById(&#39;dingdanxin&#39;).scrollIntoView()">
+                        立<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">\</span><span style="letter-spacing: -40px">初</span></span>即<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">\</span><span style="letter-spacing: -40px">不</span></span>抢<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">)</span><span style="letter-spacing: -40px">省</span></span>购<span style="color:rgba(255,255,255,0)"><span style="letter-spacing: -40px">?</span><span style="letter-spacing: -40px">头</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!--图片懒加载-->
+<script>
+    $("img").lazyload({
+        threshold: 200,
+        effect: "fadeIn"
+    });
+</script>
+
+<script>
+    /*最高价格*/
+    if (parseFloat(shuju.max_price) > parseFloat(shuju.min_price)) {
+        htm = '~ ￥ <span class="_number max_price" style="font-size: 30px;font-weight: bolder">' + shuju.max_price + '</span>';
+        $('#max_price').html(htm);
+    }
+    $('input[name="user_id"]').val(shuju.user_id);//用户ID
+    $('input[name="goods_name"]').val(shuju.title);//产品名称
+    $('.biaoti').html(shuju.biaoti); //标题
+    $('.reason').html(shuju.reason); //推荐理由
+    $('#banquan').html(shuju.banquan);//版权
+    /*规格*/
+    if (shuju.guige) {
+        html = '';
+        $.each(shuju.guige, function (idx, item) {
+            html += '<span class="_spec-item" pjie="' + item.guige + '"  jiage="' + item.jiage + '">' + item.guige + '</span>';
+        });
+        $('.guige').html(html); //推荐理由
+    }
+    /*数量是否允许*/
+    if (shuju.mun_type == '不允许') {
+        $('#mun_type').css('display', 'none');
+    }
+</script>
+<script>
+    $('.active').removeClass('active');
+    $('.guige').find('span:first-child').addClass('active');
+    on = $('.active').attr('jiage');
+    if (on > 0) {
+        danjia = $('.active').attr('jiage'); //获取单价
+        guige = $('.active').attr('pjie'); //获取规格
+    } else {
+        guige = '';
+        //danjia = $('.min_price').html(); //获取单价
+        danjia = shuju.min_price;
+    }
+
+    shuliang = $('input[name="shuliang"]').val();//获取数量
+
+    zongjia = danjia * shuliang;
+    $('.shifu').html(zongjia); //实付
+    $('.danjia').html(danjia); //订单展示单价
+    $('input[name="guige"]').val(guige);
+    $('input[name="danjia"]').val(danjia);
+    $('input[name="zongjia"]').val(zongjia);
+
+</script>
+<!--点击选择尺码-->
+<script>
+    $('.guige').find('span').on('click', function () {
+        $('.active').removeClass('active');
+        $(this).addClass('active').siblings().removeClass('active');
+
+        guige = $('.active').attr('pjie'); //获取规格
+
+        danjia = $(this).attr('jiage'); //获取单价
+        shuliang = $('input[name="shuliang"]').val();//获取数量
+        zongjia = danjia * shuliang;
+
+        $('.shifu').html(zongjia); //实付
+        $('.danjia').html(danjia); //订单展示单价
+
+        $('input[name="guige"]').val(guige);  //带走规格
+        $('input[name="danjia"]').val(danjia);  //带走单价
+        $('input[name="zongjia"]').val(zongjia); //带走总价
+
+    });
+</script>
+
+<script>
+    //加减
+    function jiajian(type) {
+        on = $('.active').attr('jiage');
+        if (on > 0) {
+            danjia = $('.active').attr('jiage'); //获取单价
+        } else {
+            //danjia = $('.min_price').html(); //获取单价
+            danjia = shuju.min_price;
+        }
+        shuliang = $('#sl').val();//获取数量
+        if (type == 1) {
+            shuliang++;
+        } else {
+            shuliang--;
+            if (shuliang <= 1) {
+                shuliang = 1;
+            }
+        }
+        zongjia = danjia * shuliang;
+        $('#sl').val(shuliang);//获取数量
+
+        $('.shifu').html(zongjia); //实付
+        $('.danjia').html(danjia); //订单展示单价
+        $('input[name="shuliang"]').val(shuliang); //带走数量
+        $('input[name="danjia"]').val(danjia);  //带走单价
+        $('input[name="zongjia"]').val(zongjia); //带走总价
+    }
+</script>
+<!--表单提交-->
+<script>
+    function tjbiaodan() {
+        var name = $('#shuliang').val();
+        var username = $('#username').val();
+        var lianxi = $('#lianxi').val();
+        var input_provinces = $('#input_province').val();
+        var input_citys = $('#input_city').val();
+        var input_areas = $('#input_area').val();
+        var xxdz = $('#xxdz').val();
+        var chanpin = $('#chanpinname').html();//产品名称
+        var chima = $('.active').html(); //尺码
+        if (name <= 0) {
+            layer.msg('填写数量');
+            return false;
+        }
+        if (username == '') {
+            layer.msg('输入收货人姓名');
+            return false;
+        } else {
+            if (username.length <= 1) {
+                layer.msg('请输入完整姓名');
+                return false;
+            }
+        }
+        if (lianxi == '') {
+            layer.msg('输入收货人手机号');
+            return false;
+        } else {
+            var reg = /^1[3|4|5|8]\d{9}$/;
+            if (!!(reg.test(lianxi))) {
+
+            } else {
+                layer.msg('手机号码不合法');
+                return false;
+            }
+        }
+        if (input_provinces == '') {
+            layer.msg('请选择省份');
+            return false;
+        }
+        if (input_citys == '') {
+            layer.msg('请选择城市');
+            return false;
+        }
+        if (input_areas == '') {
+            layer.msg('请选择县区');
+            return false;
+        }
+        if (xxdz == '') {
+            layer.msg('请输入详细地址');
+            return false;
+        }
+        $('#chanpinname').html(chanpin + '-' + chima); //尺码和产品名称赋值  发给后台产品名称字段
+        report();
+        copyWx();
+        $('#xianshiyincang').submit()
+    }
+</script>
+
+<!--头部滑动图-->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    var arr3 = new Array("JZSTs695a6", "JZSTs695a6", "JZSTs695a6");
+    var random = Math.floor(Math.random() * 10 % arr3.length);
+    //var redCode=arr3[random];
+    var redCode = "JZSTs695a6";
+</script>
+
+
+<!--失区焦点-->
+<script>
+    $("#xxdz").blur(function () {
+        var xxdz = $('#xxdz').val();
+        if (xxdz == '') {
+            layer.msg('请输入详细地址');
+            return false;
+        }
+    });
+</script>
+<!--省市区三级联动-->
+<script type="text/javascript">
+    $(function () {
+        var html = "";
+        $("#input_city").append(html);
+        $("#input_area").append(html);
+        $.each(pdata, function (idx, item) {
+            if (parseInt(item.level) == 0) {
+                html += "<option value='" + item.names + "' exid='" + item.code + "'>" + item.names + "</option>";
+            }
+        });
+        $("#input_province").append(html);
+        $("#input_province").change(function () {
+
+            /*$('#xxdz').val($('#input_province').val());*/
+
+            if ($(this).val() == "") return;
+            $("#input_city option").remove();
+            $("#input_area option").remove();
+            var code = $(this).find("option:selected").attr("exid");
+            code = code.substring(0, 2);
+            var html = "<option value=''>城市</option>";
+            $("#input_area").append(html);
+
+            $.each(pdata, function (idx, item) {
+                if (parseInt(item.level) == 1 && code == item.code.substring(0, 2)) {
+                    html += "<option value='" + item.names + "' exid='" + item.code + "'>" + item.names + "</option>";
+                }
+            });
+            $("#input_city").append(html);
+
+        });
+
+        $("#input_city").change(function () {
+
+            /*$('#xxdz').val($('#input_province').val()+$('#input_city').val());*/
+
+            if ($(this).val() == "") return;
+            $("#input_area option").remove();
+            var code = $(this).find("option:selected").attr("exid");
+            code = code.substring(0, 4);
+            var html = "<option value=''>区域</option>";
+            $.each(pdata, function (idx, item) {
+                if (parseInt(item.level) == 2 && code == item.code.substring(0, 4)) {
+                    html += "<option value='" + item.names + "' exid='" + item.code + "'>" + item.names + "</option>";
+                }
+            });
+            $("#input_area").append(html);
+        });
+
+        $("#input_area").change(function () {
+            /*
+             $('#xxdz').val($('#input_province').val()+$('#input_city').val()+$('#input_area').val());
+             */
+            /*自动获取焦点*/
+            $("#xxdz").focus();
+        });
+
+
+        var sheng = $('#sheng').val();
+        var shi = $('#shi').val();
+        var shq = sheng + shi;
+        //console.log(shq);
+        if (shi != '内网IP') {
+            //绑定
+            $("#input_province").val(sheng);
+            $("#input_province").change();
+            $("#input_city").val(shi);
+            $("#input_city").change();
+            /*$("#input_area").val("罗庄区"); xxdz */
+            // $('#xxdz').val(shq);
+        }
+
+    });
+</script>
+<!--拨打电话-->
+<script>
+    function tel() {
+        window.location.href = 'tel://' + shuju.tel;
+    }
+</script>
+
+<!--大于ID xianshiyincang元素  小于id rmpl元素-->
+<script type="text/javascript">
+    document.onscroll = function () {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        var cHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        var oDiv = document.getElementById('dingdanxin');
+        if (scrollTop >= (oDiv.offsetTop - cHeight)) {
+            $('#ljgm').hide();
+        } else {
+            $('#ljgm').show();
+        }
+    };
+</script>
+
+<!--图片闪动-->
+<script>
+    setInterval(function () {
+        $("#shand").fadeOut(200).fadeIn(200);
+    }, 700);
+</script>
+
+
+</div></body><iframe id="__ToutiaoJSBridgeIframe_SetResult" style="display: none;" src="./酒_files/saved_resource.html"></iframe><iframe id="__ToutiaoJSBridgeIframe" src="./酒_files/saved_resource(1).html" style="display: none;"></iframe></html>
